@@ -1,0 +1,10 @@
+Changes
+LICENSE
+MANIFEST
+Makefile.PL
+README
+lib/Test/UnixExit.pm
+t/00-load.t
+t/Test-UnixExit.t
+t/pod-coverage.t
+t/pod.t
