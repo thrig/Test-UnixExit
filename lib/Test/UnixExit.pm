@@ -85,7 +85,7 @@ Test::UnixExit - tests exit status words
 
 This module provides a means to check that the exit status word conforms
 to a particular pattern, including what signal and whether a core was
-generated; the simple C<<<$? >> 8 == 0>>> test discards those last
+generated; the simple C<$? E<gt>E<gt> 8 == 0> test discards those last
 two points. This code is most useful when testing external commands via
 C<system>, L<Test::Cmd>, or L<Expect>; perl code itself may instead be
 tested with other modules such as L<Test::Exit> or L<Test::Trap>.
@@ -99,7 +99,9 @@ The one function is exported by default. Sorry about that.
 
 =over 4
 
-=item B<exit_is> I<status>, I<expected-value>, I<test-name>
+=item B<exit_is>
+
+I<status>, I<expected-value>, I<test-name>
 
 This function accepts a I<status> (the 16-bit return value from the
 C<wait(2)> call), an I<expected-value> as either an 8-bit exit code or a
